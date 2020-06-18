@@ -1,9 +1,3 @@
 export class Quotes {
-    id: number;
-    submitter: string;
-    quote: string;
-    author: string;
-    date: Date;
-    upvote: number;
-    downvote: number;
+    constructor(public id: number, public submitter: string, public quote: string, public author: string, public date: Date, public upvote: number, public downvote: number) { }
 }

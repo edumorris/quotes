@@ -31,6 +31,13 @@ export class QuotesComponent implements OnInit {
     }
   }
 
+  deleteQuote(toDelete, index) {
+    confirm("Confirm delete")
+    if(toDelete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

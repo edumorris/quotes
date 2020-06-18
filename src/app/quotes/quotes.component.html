@@ -10,7 +10,7 @@
             <br>
             <hr>
             <div class="vote-section">
-                <app-quote-details [quote]='quote'></app-quote-details>
+                <app-quote-details [quote]='quote' (toDelete) = 'deleteQuote($event, i)'></app-quote-details>
             </div>
             
         </div>

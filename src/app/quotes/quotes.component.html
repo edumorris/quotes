@@ -1,6 +1,7 @@
 <div class="container">
     <div *ngFor='let quote of quotes'>
-        <div class="quote-holder">
+        <div class="quote-holder" *ngIf='quote.id == ind'>
+            [style.background = "black"]
             {{ quote.quote }}
         </div>
         <div class="details-section">

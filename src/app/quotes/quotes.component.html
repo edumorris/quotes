@@ -1,5 +1,5 @@
 <div class="container">
-    <div *ngFor='let quote of quotes; let i = index'>
+    <div class="the-quote" *ngFor='let quote of quotes; let i = index'>
         <div class="quote-holder">
             {{ quote.quote }}
         </div>
@@ -8,6 +8,7 @@
             <br>
             <span>Date Posted:</span><span>{{ quote.date | date }}</span>
             <br>
+            <hr>
             <div class="vote-section">
                 <app-quote-details [quote]='quote'></app-quote-details>
             </div>

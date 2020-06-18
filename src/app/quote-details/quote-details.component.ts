@@ -23,4 +23,8 @@ export class QuoteDetailsComponent implements OnInit {
     this.quote.downvote += 1;
   }
 
+  deleteQuote() {
+    
+  }
+
 }

@@ -1,1 +1,18 @@
-<p>quotes works!</p>
+<div class="container">
+    <div *ngFor='let quote of quotes'>
+        <div class="quote-holder">
+            {{ quote.quote }}
+        </div>
+        <div class="details-section">
+            <span>Author:</span><span>{{ quote.author }}</span>
+            <br>
+            <span>Date Posted:</span><span>{{ quote.Date | date }}</span>
+            <br>
+            <div class="vote-section">
+                <span>{{ quote.upvote }}</span><span><i class="fa fa-thumbs-up"></i></span>
+                <span>{{ quote.downvote }}</span><span><i class="fa fa-thumbs-down"></i></span>
+            </div>
+            
+        </div>
+    </div>
+</div>

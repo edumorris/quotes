@@ -4,3 +4,11 @@
     margin: 15px;
     border-radius: 25px;
 }
+
+.quote-holder {
+    padding: 10px;
+    text-align: center;
+    background: #f8f80050;
+    width: 90%;
+    margin: 10px;
+}

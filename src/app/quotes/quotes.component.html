@@ -1,12 +1,12 @@
 <div class="container">
     <div class="the-quote" *ngFor='let quote of quotes; let i = index'>
-        <div class="quote-holder">
+        <div class="quote-holder container">
             {{ quote.quote }}
         </div>
         <div class="details-section">
-            <span>Author:</span><span>{{ quote.author }}</span>
+            <span>Author: </span><span>{{ quote.author }}</span>
             <br>
-            <span>Date Posted:</span><span>{{ quote.date | date }}</span>
+            <span>Date Posted: </span><span>{{ quote.date | date }}</span>
             <br>
             <hr>
             <div class="vote-section">

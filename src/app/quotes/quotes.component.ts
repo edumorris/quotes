@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quotes } from '../quotes';
+import { Quote } from '@angular/compiler';
 
 @Component({
   selector: 'app-quotes',
@@ -8,7 +9,9 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
 
-  ind: number;  
+  ind: number; 
+  
+  @Input() quote: Quotes;
 
   quotes: Quotes[] = [
     {id: 1, submitter: "Elly Konn", quote: "The best is yet to come", author: "Unknown", date: new Date(2020, 3, 6), upvote: 21, downvote: 2},

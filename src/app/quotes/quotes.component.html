@@ -6,8 +6,9 @@
         <div class="details-section">
             <span>Author: </span><span>{{ quote.author }}</span>
             <br>
-            <span>Date Posted: </span><span>{{ quote.date | date }}</span>
+            <span>Submitted by: </span><span>{{ quote.submitter }}</span>
             <br>
+            <span>Date Posted: </span><span>{{ quote.date | date }}</span>
             <hr>
             <div class="vote-section">
                 <app-quote-details [quote]='quote' (toDelete) = 'deleteQuote($event, i)'></app-quote-details>
